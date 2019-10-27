@@ -17,7 +17,8 @@ class BankAccount
   end
 
   def valid?
-
+    balance > 0
+    status == "open"
   end
 
   def close_account
